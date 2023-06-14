@@ -1,0 +1,289 @@
+<!-- 
+# nama : BBPOM di Manado hotspot
+# dibuat oleh: Ryo Greuza
+# tahun : 2023
+# versi : v1
+-->
+<html>
+  <head>
+
+    <!--Meta tags-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="-1" />
+    <meta
+      name="viewport"
+      content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"
+    />
+
+    <!--Link and script-->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script language="javascript" src="jquery.js"></script>
+    <script language="javascript" src="action.js"></script>
+
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <title>BBPOM di Manado Hotspot</title>
+    
+  <body>
+    <div class="slider">
+      <div class="slidercontainer">
+          <div
+          id="slide1"
+          style="
+            opacity: 0.5;
+            transform: scale(1);
+            transition: all 1s ease-out 0s;
+          "
+        ></div>
+        <div
+          id="slide2"
+          style="
+            transform: scale(1);
+            transition: all 1s ease-out 0s;
+            opacity: 0.5;
+          "
+        ></div>
+        <div
+          id="slide3"
+          style="
+            transform: scale(1);
+            transition: all 1s ease-out 0s;
+            opacity: 0.5;
+          "
+        ></div>
+        <div
+        id="slide4"
+        style="
+          transform: scale(1.02);
+          transition: all 1s ease-out 0s;
+          opacity: 1;
+        "
+      ></div>
+        <div
+          id="slide5"
+          style="
+            transform: scale(1);
+            transition: all 1s ease-out 0s;
+            opacity: 0.5;
+          "
+        ></div>
+      </div>
+      <div class="tint"></div>
+      <div class="logo">
+        <img src="img/Logo_BPOM_Manado.png" />
+      </div>
+      <div class="logo2">
+        <img src="img/Berakhlak.png"/>
+      </div>
+      <div class="logo3">
+        <img src="img/We Change We Care.png"/>
+      </div>
+      <div id="arrow">
+        <p>click or scroll for login</p>
+        <img src="img/arrowdown.png" />
+      </div>
+    </div>
+    <div class="rsvlink">
+      <p>
+        email :
+        <a href="mailto:bpom_manado@pom.go.id">bpom_manado@pom.go.id</a> | phone :
+        +62431 824 327 / +62812 8196 9799 | website :
+        <a href="https://bpommanado.id/">www.bpommanado.id</a>
+      </p>
+    </div>        
+    <div class="trial"></div>
+    <div class="selectinput"> 
+      <div class="headinput">
+        <p>PILIH CARA LOGIN ANDA</p>
+      </div>    
+      <div class="selectradio">
+        <form>
+          <table id="slt">
+            <tbody>
+              <tr>
+                <td>
+                  <input type="radio" name="roomnumber" id="room" checked="" />
+                </td>
+                <td id="byroom">
+                    Bagi Pegawai Silahkan Memasukkan Asal Fungsi dan Password
+                    (khusus pegawai BBPOM di Manado)
+                </td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="accescode" id="acces" /></td>
+                <td id="byacces">
+                    Bagi Tamu (Silahkan menerima akses kode dari resepsionis /
+                    staf pelayanan publik)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+
+      <div class="loginroom">
+        <form
+          name="login"
+          id="inform"
+          action="http://hotspot.bpommanado.id/login"
+          method="post"
+        >
+          <input
+            type="hidden"
+            name="dst"
+            value="http://www.msftconnecttest.com/redirect"
+          />
+          <input type="hidden" name="popup" value="true" />
+          <table id="loginform">
+            <tbody>
+              <tr>
+                <td id="labelform">Fungsi</td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="username"
+                    value=""
+                    id="roomno"
+                    required=""
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td id="labelform">Password</td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="password" name="password" id="tolower" required="" />
+                </td>
+              </tr>
+              <tr style="display: none">
+                <td id="labelform">Email</td>
+              </tr>
+              <tr style="display: none">
+                <td>
+                  <input type="email" name="guestemail" id="tolower3" />
+                  <input id="loginhidden" type="submit" value="LOGIN" />
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top: 14px"><div id="buttons">LOGIN</div></td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+
+      <div class="loginaccescode">
+        <form
+          name="login"
+          id="inform"
+          action="http://hotspot.bpommanado.id/login"
+          method="post"
+        >
+          <input
+            type="hidden"
+            name="dst"
+            value="http://www.msftconnecttest.com/redirect"
+          />
+          <input type="hidden" name="popup" value="true" />
+          <table id="loginform">
+            <tbody>
+              <tr>
+                <td id="labelform">kode akses</td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="username"
+                    id="tolower2"
+                    value=""
+                    required=""
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="hidden" name="password" value="password" />
+                </td>
+              </tr>
+              <tr>
+                <td><input id="real" type="submit" value="LOGIN" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+    </div>
+    <div class="term">
+      Dengan melanjutkan, saya setuju dengan
+      <span id="termlink">syarat penggunaan<span> </span></span>
+    </div>
+    <div class="termextra">
+      <p>
+        Balai Besar Pengawas Obat dan Makanan di Manado berkomitmen bersama dalam pembangunan Zona Integritas menuju Balai Besar POM di Manado menjadi Wilayah Bebas dari korupsi Tahun 2023 <br>
+        #TorangSolid #TorangTangguh #WeChangeWeCare #MelayaniDenganHati
+      </p>
+    </div>
+
+    <!--
+<div class="trial">
+	
+</div>
+-->
+    <div class="logos">
+      <!--<div style="padding-bottom:20px;"><a href="#" target="_blank"><img id="#" src="#"/></a></div>	-->
+      <a href="https://dikimolapor.bpommanado.id/" target="_blank"
+        ><img src="img/dikimolapor.png" /></a
+      ><span id="space"></span>
+      <a href="https://sabua.bpommanado.id/" target="_blank"
+        ><img src="img/Logo Sabuah Perubahan.png" /></a
+      ><span id="space"></span>
+      <a href="https://simpel.bpommanado.id/ns/" target="_blank"
+        ><img src="img/Logo Simpel Sampel copy.png" /></a
+      ><span id="space"></span>
+      <a href="http://midal.bpommanado.id/" target="_blank"
+        ><img src="img/MIdal.png" /></a
+      ><span id="space"></span>
+      <a href="https://pindai.bpommanado.id/" target="_blank"
+        ><img src="img/Pindai (1).png" /></a
+      ><span id="space"></span>
+      <a href="https://motangka.bpommanado.id/" target="_blank"
+        ><img src="img/Mot Tangka.png"
+      /></a>
+    </div>
+    <div class="footer">
+      <p>© 2023 Tim Litbangvasi BBPOM di Manado. All right reserved</p>
+    </div>
+
+    <div class="blur"></div>
+    <div id="termtext">
+      <p>
+        <b>Syarat dan Ketentuan Akses BBPOM di Manado Hotspot</b><br /><br />
+        Syarat Penggunaan<br />
+        <br />
+        Penggunaan layanan <br />
+        <br />
+        Penggunaan Bapak/Ibu atas layanan dimulai saat mengklik "Terima" dan 
+        berakhir pada saat: (a) perangkat Bapak/Ibu dimatikan; atau, (b) kabel 
+        LAN tercabut dari perangkat Bapak/Ibu <br />
+        <br />
+        Saat menggunakan layanan, Bapak/Ibu harus memastikan bahwa: <br />
+        <br />
+        1. Tidak dan jangan berusaha melanggar hak, termasuk
+        hak kekayaan intelektual, dari setiap orang; <br />
+        2. Menggunakan layanan sesuai dengan Undang-Undang dan 
+        peraturan yang berlaku;<br />
+        3. Jangan melakukan dan/atau berusaha melakukan sesuatu yang akan 
+        mengganggu pengguna, layanan, dan/atau peralatan jaringan lain; dan<br />
+        4. Mematuhi persyaratan apa pun di Balai Besar POM di Manado di mana
+        Bapak/Ibu sedang mengakses Layanan;<br />
+        <br />
+        </p>
+    </div>
+  </body>
+</html>
