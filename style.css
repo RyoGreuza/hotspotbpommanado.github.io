@@ -403,21 +403,21 @@ td#labelform {
     font-size: 0.9em;
   }
   table#loginform {
-    width: 90%;
+    width: 60%;
   }
   input[type="text"],
   input[type="email"],
   input[type="password"] {
     font-size: 1em;
-    width: 100%;
+    width: 80%;
   }
   input[type="submit"]#real,
   div#buttons {
-    width: 100%;
+    width: 60%;
     padding: 15px;
   }
   input[type="submit"]#reals {
-    width: 100%;
+    width: 60%;
     padding: 15px;
   }
   div#buttons {
@@ -431,7 +431,7 @@ td#labelform {
     width: 85%;
   }
   table#status {
-    width: 80%;
+    width: 60%;
     padding: 0px;
   }
   table#status td {
