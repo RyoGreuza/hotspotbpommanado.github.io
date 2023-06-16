@@ -352,7 +352,7 @@ td#labelform {
     padding: 5px;
   }
 }
-@media only screen and (min-width: 981px) and (max-width: 1199px) {
+@media only screen and (min-width: 981px) and (max-width: 1199px) and (orientation: landscape) {
   .logo {
     right: 14%;
   }
@@ -370,7 +370,7 @@ td#labelform {
   }
 }
 
-@media only screen and (min-width: 721px) and (max-width: 980px) {
+@media only screen and (min-width: 721px) and (max-width: 980px) and (orientation: landscape) {
   .logo {
     right: 16%;
   }
